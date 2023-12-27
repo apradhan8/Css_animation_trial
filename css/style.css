@@ -1,0 +1,120 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/images/Background.png);
+    background-size: cover;
+}
+
+#sea {
+    width: 100vw;
+    height: 40vh;
+    background-image: url(../assets/images/Sea.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+
+#boat {
+    width: 700px;
+    height: 377px;
+    background-image: url(../assets/images/Boat.png);
+    background-size: cover;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.smoke {
+    width: 64px;
+    height: 10px;
+    background-image: url(../assets/images/Smoke.png);
+    background-size: cover;
+    position: absolute;
+    top: 45%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    opacity: 0;
+}
+
+#shadow {
+    width: 516px;
+    height: 32px;
+    background-image: url(../assets/images/Shadow.png);
+    background-size: cover;
+    position: absolute;
+    top: 64.5%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.cloud {
+    background-image: url(../assets/images/Cloud.png);
+    background-size: cover;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.cloud1 {
+    width: 100px;
+    height: 21px;
+
+    top: 40%;
+    left: 12%;
+}
+
+.cloud2 {
+    width: 80px;
+    height: 16px;
+
+    top: 50%;
+    left: 22%;
+}
+
+.cloud3 {
+    width: 60px;
+    height: 12px;
+
+    top: 45%;
+    left: 5%;
+}
+
+.cloud4 {
+    width: 80px;
+    height: 16px;
+
+    top: 28%;
+    left: 75%;
+}
+
+.cloud5 {
+    width: 100px;
+    height: 21px;
+
+    top: 20%;
+    left: 82%;
+}
+
+/* TODO: Set the SVG to be 300px wide and 300px high */
+/* TODO: position it in the sky similar to the example */
+svg {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 1%;
+    left: 10%;
+}
+
+/* TOD0: set the radius of the circle to be 30% of its parent */
+/* TODO: position it to the center of the SVG */
+/* set its color to be #e2b633 */
+
+svg circle {
+    r: 30%;
+    cx: 50%;
+    cy: 50%;
+    fill: #e2b633;
+}

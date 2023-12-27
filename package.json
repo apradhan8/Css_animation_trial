@@ -1,0 +1,15 @@
+{
+  "name": "inm220-final-project",
+  "version": "1.0.0",
+  "description": "final-project",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "Aaditya Pradhan",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

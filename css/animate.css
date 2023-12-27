@@ -1,0 +1,144 @@
+/* keyframe to make svg shape move */
+
+/* Animating cloud movement */
+.cloud {
+    transform-origin: center;
+    animation: cloudAnimate 6s ease-in-out infinite alternate;
+}
+
+/* Cloud animation delays */
+.cloud1 {
+    animation-delay: 0.2s;
+
+}
+
+.cloud2 {
+    animation-delay: 0.5s;
+}
+
+.cloud3 {
+    animation-delay: 0.5s;
+}
+
+.cloud4 {
+    animation-delay: 2.5s;
+}
+
+.cloud5 {
+    animation-delay: 3s;
+}
+
+/* Animating sea movement */
+#sea {
+    transform-origin: center;
+    animation: seaanimation 6s ease-in-out infinite;
+}
+
+/* Animating boat movement */
+#boat {
+    transform-origin: center;
+    animation: boatmovinganimation 6s ease-in-out infinite;
+}
+
+/* Animating smoke appearance */
+.smoke {
+    transform-origin: center;
+    animation: smokeAnimation 6s linear infinite;
+}
+
+/* Smoke animation delays */
+.smoke1 {
+    animation-delay: 0.5s;
+}
+
+.smoke2 {
+    animation-delay: 1.2s;
+}
+
+.smoke3 {
+    animation-delay: 2.2s;
+}
+
+/* Animating sun's scale and opacity */
+svg circle:nth-child(2) {
+    transform-origin: center;
+    animation: sunAnimate 3s ease-in infinite;
+}
+
+/* Animating another sun's scale and opacity to make glowing effect*/
+svg circle:nth-child(3) {
+    transform-origin: center;
+    animation: sunAnimate 4s ease-in infinite;
+}
+
+/* Keyframes for smoke animation */
+@keyframes smokeAnimation {
+    0% {
+        top: 20%;
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        top: 10%;
+        left: 30%;
+        transform: scale(2);
+    }
+
+    55% {
+        top: 10%;
+        left: 30%;
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Keyframes for boat animation */
+@keyframes boatmovinganimation {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -40%);
+    }
+}
+
+/* Keyframes for ocean animation */
+@keyframes seaanimation {
+
+    0%,
+    100% {
+        height: 40vh;
+    }
+
+    50% {
+        height: 40vh;
+    }
+}
+
+/* Keyframes for sun animation */
+@keyframes sunAnimate {
+    0% {
+        transform: scale(1);
+        opacity: 1.2;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Keyframes for cloud animation */
+@keyframes cloudAnimate {
+    to {
+        transform: translateX(60%);
+    }
+}
